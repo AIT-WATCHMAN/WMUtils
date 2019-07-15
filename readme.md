@@ -12,8 +12,8 @@ scripts, macro files, and anything else that does not belong directly in
 rat-pac. Larger tools (again like watchmakers and sibyl) can live within their
 own home repositories, but should be linked here as a git submodule.
 
-_Note: This directory is based partially on git submodules, run setup.sh
-to enable auto fetch/clone of submodules_
+_Note: This directory is based partially on git submodules, run update.sh to
+collect submodule changes_
 
 Submodules
 ----------
