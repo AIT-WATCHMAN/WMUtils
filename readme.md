@@ -18,4 +18,4 @@ to enable auto fetch/clone of submodules_
 Submodules
 ----------
 Example of how to install a submodule, using sibyl as an example
-$ git submodule add https://github.com/ait-watchman/sibyl.git
+```git submodule add https://github.com/ait-watchman/sibyl.git```
