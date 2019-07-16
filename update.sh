@@ -9,3 +9,4 @@ then
 fi
 
 git submodule update --recursive --init
+git pull
