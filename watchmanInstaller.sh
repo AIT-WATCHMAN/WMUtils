@@ -116,7 +116,7 @@ function install(){
     mkdir -p cmake_build
     #mkdir -p cmake
     cd cmake_build
-    ../cmake_src/bootstrap --prefix=../local && make -j$(procuse) && make install
+    ../cmake_src/bootstrap --prefix=../local && make -j$procuse && make install
     cd ../
     rm -rf cmake_src cmake_build
   fi
@@ -127,7 +127,7 @@ function install(){
     git clone https://github.com/python/cpython.git --single-branch --branch 3.7 python_src
     cd python_src
     ./configure --prefix=$prefix --enable-shared
-    make -j$(procuse)
+    make -j$procuse
     make install
     cd ../
     rm -rf python_src
@@ -142,7 +142,7 @@ function install(){
     mkdir -p root_build
     cd root_build
     cmake -D minuit2=ON -DCMAKE_INSTALL_PREFIX=$prefix -DPYTHON_EXECUTABLE=$(command -v python3) ../root_src
-    make -j$(procuse)
+    make -j$procuse
     make install
     cd ../
     rm -rf root_src root_build
@@ -155,7 +155,7 @@ function install(){
     mkdir -p geant_build
     cd geant_build
     cmake -DCMAKE_INSTALL_PREFIX=$prefix ../geant_src -DGEANT4_BUILD_EXPAT=OFF -DGEANT4_BUILD_MULTITHREADED=OFF -DGEANT4_USE_QT=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_INSTALL_DATA_TIMEOUT=15000
-    make -j$(procuse)
+    make -j$procuse
     make install
     cd ../
     rm -rf geant_src geant_build
@@ -171,7 +171,7 @@ function install(){
     cd ratpac
     ./configure
     source env.sh
-    make -j$(procuse)
+    make -j$procuse
     # Install, switch to cmake when in production, build-in place
     #cmake . -Bbuild
     #cmake --build build -- -j8

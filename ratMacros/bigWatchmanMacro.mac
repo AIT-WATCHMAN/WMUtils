@@ -1,0 +1,100 @@
+####################################################################
+# Watchman example macro
+# This can be used as a tutorial to assist in the setup of a macro
+# file. Copy this to a new file, then either comment out or remove
+# the unneeded components. Feel free to add things which are missing
+# or incomplete.
+####################################################################
+
+####################################################################
+# If not simulating hadrons or muons, its quicker to ignore these
+/glg4debug/glg4param omit_muon_processes 1.0
+/glg4debug/glg4param omit_hadronic_processes 1.0
+
+# Choose the watchman detector
+/rat/db/set DETECTOR experiment "Watchman"
+/rat/db/set DETECTOR detector_factory "Watchman"
+# Specify the target photocoverage if needed (default 25%)
+/rat/db/set WATCHMAN_PARAMS photocathode_coverage 0.25
+/rat/db/set WATCHMAN_PARAMS veto_coverage 0.002
+
+# Additional detector components can be added and modified.
+# As an example, the following deploys the calibration hardware
+/rat/db/load Watchman/DecayChamber.geo
+# Individual ratdb parameters can be adjusted as well
+/rat/db/set GEO[sourcecan] posx 120.0
+
+# To activate WBLS in various regions:
+/rat/db/set GEO[detector] material "Gd_wbls_10pct"
+/rat/db/set GEO[fiducial] material "Gd_wbls_10pct"
+
+/run/initialize
+
+# Keeping tracks
+/tracking/storeTrajectory 1
+
+# BEGIN EVENT LOOP
+/rat/proc lesssimpledaq
+/rat/proc count
+/rat/procset update 10
+
+# Use IO.default_output_filename
+# Also, proclast sets the last processor to run
+/rat/proclast outroot
+# Either specify the exact filename here
+/rat/procset file "bigmac.root"
+# Or specify at run time: rat bigWatchmanMacro.mac -o bigmac.root
+# END Event Loop
+
+# Create events within detector volumes based on various generators
+
+####################################################################
+## Generators take the form 
+## /generator/add NAME OPTIONS
+## NAME: combo decaychain
+## Particle Generators ##
+/generator/add combo gun:point
+/generator/add combo gun:fill
+/generator/add combo gun:paint
+/generator/add combo gun:line
+/generator/add combo gun2:point
+## Specific Generators ##
+/generator/add combo ibd:fill:poisson
+/generator/add decaychain 214Bi:fill:poisson
+
+# Combo generator: type:position:time
+/generator/add combo gun:fill:poisson
+/generator/vtx/set e- 0. 0. 0. 1.0 # u v w energy
+/generator/pos/set 0. 0. 0. # x y z
+
+# Simple radioactive decay chains in the PMTs
+/generator/add decaychain 208Tl:regexfill:poisson
+/generator/pos/set inner_pmts[0-9]+
+# /generator/pos/set cable+ ## In PMT Cables
+/generator/rate/set 1.0
+
+# Decay in the detector
+/generator/add decaychain 214Bi:regexfill:poisson
+/generator/pos/set detector+
+/generator/rate/set 1.0
+
+# Inverse beta decay
+/generator/add combo ibd:fill:poisson
+/generator/vtx/set promptDelayedPair 1 0 0
+/generator/pos/set 0 0 0
+/generator/rate/set 1.0
+
+# Just the prompt positron
+/generator/add combo spectrum:fill:poisson
+/generator/vtx/set e+ promptPositron
+/generator/pos/set 0 0 0
+/generator/rate/set 1.0
+
+# Include on macro file in another:
+/control/execute watchman.mac
+
+/generator/add combo gun2:fill
+/generator/vtx/set e-  0 0 0 0 5.0 5.0
+/generator/pos/set 0 0 0
+
+/run/beamOn 10
