@@ -1,0 +1,10 @@
+# This macro gives examples on how to use a moveable calibration
+# source in simulations.
+/glg4debug/glg4param omit_muon_processes  0.0
+/glg4debug/glg4param omit_hadronic_processes  0.0
+
+# Default watchman, can be switched.
+/rat/db/set DETECTOR experiment "Watchman"
+
+/rat/db/set DETECTOR geo_file "Watchman/CalibrationTank.geo"
+/rat/db/load Watchman/Nitrogen16.geo
