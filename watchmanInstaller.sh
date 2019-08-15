@@ -188,7 +188,7 @@ function install(){
   then
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
-    pip install --user git+https://github.com/ait-watchman/sibyl@miles#egg=sibyl
+    python3 -m pip install --user git+https://github.com/ait-watchman/sibyl@miles#egg=sibyl
   fi
   
   outfile="env.sh"
