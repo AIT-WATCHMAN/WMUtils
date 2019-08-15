@@ -11,4 +11,4 @@
 /generator/add decaychain 16N:regexfill:poisson
 /generator/pos/set sourcegas
 
-/run/beamOn 1000
+/run/beamOn 10
