@@ -167,15 +167,11 @@ function install(){
   then
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
-    git clone https://github.com/ait-watchman/rat-pac.git ratpac
+    git clone https://github.com/ait-watchman/rat-pac.git -b cmake 
     cd ratpac
-    ./configure
-    source env.sh
-    make -j$procuse
-    # Install, switch to cmake when in production, build-in place
-    #cmake . -Bbuild
-    #cmake --build build -- -j8
-    #source ratpac.sh
+    cmake . -Bbuild
+    cmake --build build -- -j8
+    source ratpac.sh
     cd ../
   fi
   
@@ -183,8 +179,7 @@ function install(){
   printf "export PATH=$prefix/bin:\$PATH\n" > $outfile
   printf "export LD_LIBRARY_PATH=$prefix/lib:\$LD_LIBRARY_PATH\n" >> $outfile
   printf "pushd $prefix/bin 2>&1 >/dev/null\nsource thisroot.sh\nsource geant4.sh\npopd 2>&1 >/dev/null\n" >> $outfile
-  printf "source $prefix/../ratpac/env.sh" >> $outfile
-  #printf "source $prefix/../ratpac/ratpac.sh" >> $outfile
+  printf "source $prefix/../ratpac/ratpac.sh" >> $outfile
 }
 
 function help()
