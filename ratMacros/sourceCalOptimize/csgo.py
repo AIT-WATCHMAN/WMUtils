@@ -35,7 +35,7 @@ def bodyMacro(**kwargs):
 /rat/db/set GEO[sourcescint] posz {scintPosZ}
 /rat/db/set GEO[sourcegas] r_max {gasRadius}
 /rat/db/set GEO[sourcegas] size_z {gasHeight}
-/rat/db/set GEO[pmtholderInvis] posz {pmtPos}
+/rat/db/set GEO[sourcepmt] posz {pmtPos}
 /rat/proc outroot
 /rat/procset file "{rootName}"
 /control/execute footer.mac
@@ -52,6 +52,6 @@ if __name__ == '__main__':
     #        )
     # Case study 2: How tall of a volume do we need -- driven by flow so hard
     # Case study 3: Scintillator fixed, how thick is the steel (contain electron)
-    thick = np.arange(1.0,6.0,1.0)
+    thick = np.arange(19.0,20.0,1.0)
     for thickness in thick:
         bodyMacro( scintThickness = thickness )
