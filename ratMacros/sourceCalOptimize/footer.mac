@@ -4,4 +4,4 @@
 #/generator/vtx/set alpha 0 0 0 6.76
 /generator/pos/set sourcegas
 
-/run/beamOn 10000
+/run/beamOn 100
