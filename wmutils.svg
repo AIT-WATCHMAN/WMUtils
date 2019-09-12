@@ -10,8 +10,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="165.87076mm"
-   height="133.40668mm"
-   viewBox="0 0 165.87076 133.40668"
+   height="118.02951mm"
+   viewBox="0 0 165.87076 118.02951"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 5da689c313, 2019-01-14"
@@ -27,7 +27,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1"
      inkscape:cx="327.98617"
-     inkscape:cy="189.32362"
+     inkscape:cy="189.3236"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,18 +56,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-21.700638,-11.732429)">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="83.282555"
-       y="19.775763"
-       id="text4520"><tspan
-         sodipodi:role="line"
-         id="tspan4518"
-         x="83.282555"
-         y="19.775763"
-         style="stroke-width:0.26458332px">WMUtils</tspan></text>
+     transform="translate(-21.700638,-27.109589)">
     <ellipse
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3000ff;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.50000002, 3.00000004;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="path4522"
