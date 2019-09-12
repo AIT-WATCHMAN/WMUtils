@@ -1,6 +1,5 @@
 Watchman Utilities
 ==================
-Name pending: Possible option = JewelryBox, other containers also reasonable.
 ![wmutils](wmutils.svg)
 
 **Clone with**
