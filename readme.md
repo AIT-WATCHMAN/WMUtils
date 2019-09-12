@@ -1,10 +1,11 @@
-Watchman Collection
-===================
+Watchman Utilities
+==================
 Name pending: Possible option = JewelryBox, other containers also reasonable.
+![wmutils](wmutils.svg)
 
 **Clone with**
 ```bash
-git clone --recursive https://github.com/morganaskins/watchmancollection.git
+git clone --recursive https://github.com/morganaskins/wmutils.git
 ./update.sh
 ```
 

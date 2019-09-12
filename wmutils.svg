@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="165.87076mm"
+   height="133.40668mm"
+   viewBox="0 0 165.87076 133.40668"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
+   sodipodi:docname="wmutils.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="327.98617"
+     inkscape:cy="189.32362"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1918"
+     inkscape:window-height="1061"
+     inkscape:window-x="0"
+     inkscape:window-y="17"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-21.700638,-11.732429)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="83.282555"
+       y="19.775763"
+       id="text4520"><tspan
+         sodipodi:role="line"
+         id="tspan4518"
+         x="83.282555"
+         y="19.775763"
+         style="stroke-width:0.26458332px">WMUtils</tspan></text>
+    <ellipse
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3000ff;stroke-width:1.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.50000002, 3.00000004;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4522"
+       cx="104.63602"
+       cy="86.124344"
+       rx="82.185379"
+       ry="58.264755" />
+    <ellipse
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dd1f1e;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4524"
+       cx="69.836594"
+       cy="66.878922"
+       rx="13.418463"
+       ry="7.3646049" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="60.589581"
+       y="68.135422"
+       id="text4528"><tspan
+         sodipodi:role="line"
+         id="tspan4526"
+         x="60.589581"
+         y="68.135422"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">Macros</tspan></text>
+    <ellipse
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dd1f1e;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4524-3"
+       cx="50.006248"
+       cy="91.418755"
+       rx="13.418463"
+       ry="7.3646049" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="39.171738"
+       y="92.675255"
+       id="text4528-6"><tspan
+         sodipodi:role="line"
+         id="tspan4526-7"
+         x="39.171738"
+         y="92.675255"
+         style="font-size:4.93888903px;stroke-width:0.26458332px">Analysis</tspan></text>
+    <ellipse
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dd1f1e;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4524-3-5"
+       cx="73.024986"
+       cy="121.05205"
+       rx="22.388044"
+       ry="11.04252" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="72.163475"
+       y="118.3398"
+       id="text4528-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan4526-7-5"
+         x="72.805527"
+         y="118.3398"
+         style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332px">Other useful </tspan><tspan
+         sodipodi:role="line"
+         x="72.163475"
+         y="124.84785"
+         style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
+         id="tspan4572">small programs</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3d9154;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4574"
+       width="41.274048"
+       height="16.13863"
+       x="117.07858"
+       y="58.214027" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="127.52914"
+       y="67.870834"
+       id="text4578"><tspan
+         sodipodi:role="line"
+         id="tspan4576"
+         x="127.52914"
+         y="67.870834"
+         style="font-size:5.64444447px;stroke-width:0.26458332px">Rat-pac</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3d9154;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4574-6"
+       width="41.274048"
+       height="16.13863"
+       x="116.94633"
+       y="77.26403" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="131.101"
+       y="86.920837"
+       id="text4578-2"><tspan
+         sodipodi:role="line"
+         id="tspan4576-9"
+         x="131.101"
+         y="86.920837"
+         style="font-size:5.64444447px;stroke-width:0.26458332px">Sibyl</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3d9154;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4574-6-1"
+       width="41.274048"
+       height="16.13863"
+       x="116.94633"
+       y="95.784889" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="118.93024"
+       y="105.44162"
+       id="text4578-2-2"><tspan
+         sodipodi:role="line"
+         id="tspan4576-9-7"
+         x="118.93024"
+         y="105.44162"
+         style="font-size:5.64444447px;stroke-width:0.26458332px">Watchmakers</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 105.30417,28.712501 c -18.519208,16.662032 0.79375,45.500379 0.79375,66.145832 0,19.202167 -9.474932,32.379307 -1.32292,48.683337"
+       id="path4632"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="73.331871"
+       y="45.116665"
+       id="text4636"><tspan
+         sodipodi:role="line"
+         id="tspan4634"
+         x="73.331871"
+         y="45.116665"
+         style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px">Utility</tspan><tspan
+         sodipodi:role="line"
+         x="73.331871"
+         y="51.021725"
+         style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
+         id="tspan4638">Programs</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="130.19617"
+       y="45.321499"
+       id="text4636-0"><tspan
+         sodipodi:role="line"
+         x="130.19617"
+         y="45.321499"
+         style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
+         id="tspan4638-3">Git</tspan><tspan
+         sodipodi:role="line"
+         x="130.19617"
+         y="51.226559"
+         style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
+         id="tspan4663">Submodules</tspan></text>
+    <circle
+       style="opacity:1;vector-effect:none;fill:#3d9154;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4665"
+       cx="137.31876"
+       cy="118.1417"
+       r="1.8520833" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:#3d9154;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4665-6"
+       cx="137.31876"
+       cy="122.37504"
+       r="1.8520833" />
+    <circle
+       style="opacity:1;vector-effect:none;fill:#3d9154;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path4665-1"
+       cx="137.31876"
+       cy="126.60837"
+       r="1.8520833" />
+  </g>
+</svg>
