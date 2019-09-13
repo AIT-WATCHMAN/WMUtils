@@ -35,6 +35,7 @@ function install(){
   skip_root=false
   skip_geant=false
   skip_ratpac=false
+  skip_sibyl=false
   for element in $@;
   do
     if [ "$skipping" = true ]
@@ -58,6 +59,10 @@ function install(){
       if [ $element == "ratpac" ]
       then
         skip_ratpac=true
+      fi
+      if [ $element == "sibyl" ]
+      then
+        skip_sibyl=true
       fi
     fi
     if [ $element == "--skip" ]
@@ -90,6 +95,10 @@ function install(){
       if [ $element == "ratpac" ]
       then
         skip_ratpac=false
+      fi
+      if [ $element == "sibyl" ]
+      then
+        skip_sibyl=false
       fi
     fi
     if [ $element == "--only" ]
@@ -168,24 +177,26 @@ function install(){
   then
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
-    git clone https://github.com/ait-watchman/rat-pac.git ratpac
+    git clone https://github.com/ait-watchman/rat-pac.git -b cmake 
     cd ratpac
-    ./configure
-    source env.sh
-    make -j$procuse
-    # Install, switch to cmake when in production, build-in place
-    #cmake . -Bbuild
-    #cmake --build build -- -j8
-    #source ratpac.sh
+    cmake . -Bbuild
+    cmake --build build -- -j$procuse
+    source ratpac.sh
     cd ../
+  fi
+
+  if ! [ "$skip_sibyl" = true ]
+  then
+    source $prefix/bin/thisroot.sh
+    source $prefix/bin/geant4.sh
+    python3 -m pip install --user git+https://github.com/ait-watchman/sibyl@miles#egg=sibyl
   fi
   
   outfile="env.sh"
   printf "export PATH=$prefix/bin:\$PATH\n" > $outfile
   printf "export LD_LIBRARY_PATH=$prefix/lib:\$LD_LIBRARY_PATH\n" >> $outfile
   printf "pushd $prefix/bin 2>&1 >/dev/null\nsource thisroot.sh\nsource geant4.sh\npopd 2>&1 >/dev/null\n" >> $outfile
-  printf "source $prefix/../ratpac/env.sh" >> $outfile
-  #printf "source $prefix/../ratpac/ratpac.sh" >> $outfile
+  printf "source $prefix/../ratpac/ratpac.sh" >> $outfile
 }
 
 function help()

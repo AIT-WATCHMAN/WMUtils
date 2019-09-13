@@ -1,6 +1,3 @@
-[submodule "sibyl"]
-	path = sibyl
-	url = https://github.com/ait-watchman/sibyl.git
 [submodule "watchmakers"]
 	path = watchmakers
 	url = https://github.com/ait-watchman/watchmakers.git
