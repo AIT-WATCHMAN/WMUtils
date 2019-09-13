@@ -1,14 +1,7 @@
-/run/initialize
-# Tracking on
-/tracking/storeTrajectory 1
-
-# BEGIN EVENT LOOP
-/rat/proc lesssimpledaq
-/rat/proclast count
-/rat/procset update 1
-
 ## Nitrogen 16
 /generator/add decaychain 16N:regexfill:poisson
+#/generator/add combo gun:regexfill:poisson
+#/generator/vtx/set alpha 0 0 0 6.76
 /generator/pos/set sourcegas
 
-/run/beamOn 10
+/run/beamOn 100
