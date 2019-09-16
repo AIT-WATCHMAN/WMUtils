@@ -177,7 +177,7 @@ function install(){
   then
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
-    git clone https://github.com/ait-watchman/rat-pac.git -b cmake 
+    git clone https://github.com/ait-watchman/rat-pac.git -b cmake ratpac
     cd ratpac
     cmake . -Bbuild
     cmake --build build -- -j$procuse
