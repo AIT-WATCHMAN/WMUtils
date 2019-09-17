@@ -141,7 +141,8 @@ function install(){
     cd ../
     rm -rf python_src
     python3 -m pip install --upgrade pip
-    python3 -m pip install numpy scipy matplotlib PyOpenGL PyQt5 Markdown uproot pyqtgraph
+    python3 -m pip install numpy scipy matplotlib PyOpenGL \
+      PyQt5 Markdown uproot pyqtgraph docopt
   fi
   
   # Install root
