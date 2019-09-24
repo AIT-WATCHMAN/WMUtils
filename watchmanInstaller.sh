@@ -178,7 +178,7 @@ function install(){
   then
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
-    git clone https://github.com/ait-watchman/rat-pac.git -b cmake ratpac
+    git clone https://github.com/ait-watchman/rat-pac.git ratpac
     cd ratpac
     cmake . -Bbuild
     cmake --build build -- -j$procuse
@@ -186,12 +186,12 @@ function install(){
     cd ../
   fi
 
-  if ! [ "$skip_sibyl" = true ]
-  then
-    source $prefix/bin/thisroot.sh
-    source $prefix/bin/geant4.sh
-    python3 -m pip install --user git+https://github.com/ait-watchman/sibyl@miles#egg=sibyl
-  fi
+  #if ! [ "$skip_sibyl" = true ]
+  #then
+  #  source $prefix/bin/thisroot.sh
+  #  source $prefix/bin/geant4.sh
+  #  python3 -m pip install --user git+https://github.com/ait-watchman/sibyl@miles#egg=sibyl
+  #fi
   
   outfile="env.sh"
   printf "export PATH=$prefix/bin:\$PATH\n" > $outfile
