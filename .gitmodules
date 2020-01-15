@@ -1,9 +1,0 @@
-[submodule "watchmakers"]
-	path = watchmakers
-	url = https://github.com/ait-watchman/watchmakers.git
-[submodule "analysisTools/WATCHStat"]
-	path = analysisTools/WATCHStat
-	url = https://github.com/ait-watchman/WATCHStat.git
-[submodule "sibyl"]
-        path = sibyl
-        url = https://github.com/ait-watchman/sibyl.git

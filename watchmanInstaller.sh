@@ -148,7 +148,6 @@ function install(){
   # Install root
   if ! [ "$skip_root" = true ]
   then
-    #git clone https://github.com/root-project/root.git --single-branch --branch v6-18-00-patches root_src
     git clone https://github.com/root-project/root.git --single-branch --branch v6-18-00 root_src
     mkdir -p root_build
     cd root_build
