@@ -110,6 +110,7 @@ function install(){
       skip_root=true
       skip_geant=true
       skip_ratpac=true
+      skip_sibyl=true
     fi
   done
   
@@ -185,12 +186,10 @@ function install(){
     cd ../
   fi
 
-  #if ! [ "$skip_sibyl" = true ]
-  #then
-  #  source $prefix/bin/thisroot.sh
-  #  source $prefix/bin/geant4.sh
-  #  python3 -m pip install --user git+https://github.com/ait-watchman/sibyl@miles#egg=sibyl
-  #fi
+  if ! [ "$skip_sibyl" = true ]
+  then
+    python3 -m pip install git+https://github.com/ait-watchman/sibyl#egg=sibyl
+  fi
   
   outfile="env.sh"
   printf "export PATH=$prefix/bin:\$PATH\n" > $outfile
