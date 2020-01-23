@@ -2,15 +2,13 @@
 
 # Since system dependencies, especially on clusters, are a pain
 # Lets just pre-install everything (except GCC for now).
-# Assume one modules loads a good version of gcc
 
 # Todo:
 # --help, -h
-# interactive mode
-# Minimum gcc
 
-# CLEANSE! -- maybe not
-#[ "$(env | /bin/sed -r -e '/^(PWD|SHLVL|_)=/d')" ] && exec -c $0
+# wmInstall.log
+exec > >(tee -i wminstall.log)
+exec 2>&1
 
 function install(){
   help $@
@@ -122,7 +120,6 @@ function install(){
   # Install cmake
   if ! [ "$skip_cmake" = true ]
   then
-    rm -f cmake.log
     git clone https://github.com/Kitware/CMake.git --single-branch --branch v3.16.0 cmake_src
     mkdir -p cmake_build
     cd cmake_build
@@ -144,7 +141,6 @@ function install(){
   # Install python
   if ! [ "$skip_python" = true ]
   then
-    rm -f python.log
     git clone https://github.com/python/cpython.git --single-branch --branch 3.7 python_src
     cd python_src
     ./configure --prefix=$prefix --enable-shared \
@@ -168,7 +164,6 @@ function install(){
   # Install root
   if ! [ "$skip_root" = true ]
   then
-    rm -f root.log
     git clone https://github.com/root-project/root.git --single-branch --branch v6-18-00 root_src
     mkdir -p root_build
     cd root_build
@@ -192,7 +187,6 @@ function install(){
   # Install Geant4
   if ! [ "$skip_geant" = true ]
   then
-    rm -f geant4.log
     git clone https://github.com/geant4/geant4.git --single-branch --branch geant4-10.4-release geant_src
     mkdir -p geant_build
     cd geant_build
@@ -214,7 +208,6 @@ function install(){
   # Install rat-pac
   if ! [ "$skip_ratpac" = true ]
   then
-    rm -f ratpac.log 
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
     rm -rf ratpac
