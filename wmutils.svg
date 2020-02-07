@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="327.98617"
-     inkscape:cy="189.3236"
+     inkscape:cx="267.787"
+     inkscape:cy="284.44701"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -35,7 +35,7 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1918"
+     inkscape:window-width="1303"
      inkscape:window-height="1061"
      inkscape:window-x="0"
      inkscape:window-y="17"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,60 +67,60 @@
     <ellipse
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dd1f1e;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="path4524"
-       cx="69.836594"
-       cy="66.878922"
+       cx="57.66576"
+       cy="57.883087"
        rx="13.418463"
        ry="7.3646049" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="60.589581"
-       y="68.135422"
+       x="48.418747"
+       y="59.139587"
        id="text4528"><tspan
          sodipodi:role="line"
          id="tspan4526"
-         x="60.589581"
-         y="68.135422"
+         x="48.418747"
+         y="59.139587"
          style="font-size:4.93888903px;stroke-width:0.26458332px">Macros</tspan></text>
     <ellipse
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dd1f1e;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="path4524-3"
-       cx="50.006248"
-       cy="91.418755"
+       cx="103.71667"
+       cy="57.55209"
        rx="13.418463"
        ry="7.3646049" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="39.171738"
-       y="92.675255"
+       x="92.882156"
+       y="58.80859"
        id="text4528-6"><tspan
          sodipodi:role="line"
          id="tspan4526-7"
-         x="39.171738"
-         y="92.675255"
+         x="92.882156"
+         y="58.80859"
          style="font-size:4.93888903px;stroke-width:0.26458332px">Analysis</tspan></text>
     <ellipse
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#dd1f1e;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="path4524-3-5"
-       cx="73.024986"
-       cy="121.05205"
+       cx="145.7854"
+       cy="57.552048"
        rx="22.388044"
        ry="11.04252" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="72.163475"
-       y="118.3398"
+       x="144.92389"
+       y="54.839798"
        id="text4528-6-3"><tspan
          sodipodi:role="line"
          id="tspan4526-7-5"
-         x="72.805527"
-         y="118.3398"
+         x="145.56595"
+         y="54.839798"
          style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332px">Other useful </tspan><tspan
          sodipodi:role="line"
-         x="72.163475"
-         y="124.84785"
+         x="144.92389"
+         y="61.347847"
          style="font-size:4.93888903px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan4572">small programs</tspan></text>
     <rect
@@ -128,109 +128,104 @@
        id="rect4574"
        width="41.274048"
        height="16.13863"
-       x="117.07858"
-       y="58.214027" />
+       x="133.48276"
+       y="96.843193" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="127.52914"
-       y="67.870834"
+       x="143.9333"
+       y="106.5"
        id="text4578"><tspan
          sodipodi:role="line"
          id="tspan4576"
-         x="127.52914"
-         y="67.870834"
+         x="143.9333"
+         y="106.5"
          style="font-size:5.64444447px;stroke-width:0.26458332px">Rat-pac</tspan></text>
     <rect
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3d9154;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect4574-6"
        width="41.274048"
        height="16.13863"
-       x="116.94633"
-       y="77.26403" />
+       x="60.325493"
+       y="116.15778" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="131.101"
-       y="86.920837"
+       x="74.480164"
+       y="125.81458"
        id="text4578-2"><tspan
          sodipodi:role="line"
          id="tspan4576-9"
-         x="131.101"
-         y="86.920837"
+         x="74.480164"
+         y="125.81458"
          style="font-size:5.64444447px;stroke-width:0.26458332px">Sibyl</tspan></text>
     <rect
        style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3d9154;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect4574-6-1"
        width="41.274048"
        height="16.13863"
-       x="116.94633"
-       y="95.784889" />
+       x="109.80258"
+       y="116.15781" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="118.93024"
-       y="105.44162"
+       x="111.78649"
+       y="125.81454"
        id="text4578-2-2"><tspan
          sodipodi:role="line"
          id="tspan4576-9-7"
-         x="118.93024"
-         y="105.44162"
+         x="111.78649"
+         y="125.81454"
          style="font-size:5.64444447px;stroke-width:0.26458332px">Watchmakers</tspan></text>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 105.30417,28.712501 c -18.519208,16.662032 0.79375,45.500379 0.79375,66.145832 0,19.202167 -9.474932,32.379307 -1.32292,48.683337"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.59242278;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 23.266663,76.186225 c 22.938016,18.768298 64.370585,0.288797 93.566127,0.777186 27.15452,0.45423 45.46935,10.166665 68.80036,2.464183"
        id="path4632"
        inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="73.331871"
-       y="45.116665"
+       x="104.81729"
+       y="36.385414"
        id="text4636"><tspan
          sodipodi:role="line"
          id="tspan4634"
-         x="73.331871"
-         y="45.116665"
+         x="104.81729"
+         y="36.385414"
          style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px">Utility</tspan><tspan
          sodipodi:role="line"
-         x="73.331871"
-         y="51.021725"
+         x="104.81729"
+         y="42.290474"
          style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
          id="tspan4638">Programs</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="130.19617"
-       y="45.321499"
+       x="104.00242"
+       y="91.094414"
        id="text4636-0"><tspan
          sodipodi:role="line"
-         x="130.19617"
-         y="45.321499"
+         x="104.00242"
+         y="91.094414"
          style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
-         id="tspan4638-3">Git</tspan><tspan
+         id="tspan4663">watchmanInstaller.sh</tspan></text>
+    <rect
+       style="opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#3d9154;stroke-width:1;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect4574-3"
+       width="83.99276"
+       height="15.730259"
+       x="42.278217"
+       y="96.528137" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:4.90008354px;font-family:serif;-inkscape-font-specification:serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="44.057911"
+       y="105.98076"
+       id="text4578-6"><tspan
          sodipodi:role="line"
-         x="130.19617"
-         y="51.226559"
-         style="font-size:7.05555534px;text-align:center;text-anchor:middle;stroke-width:0.26458332px"
-         id="tspan4663">Submodules</tspan></text>
-    <circle
-       style="opacity:1;vector-effect:none;fill:#3d9154;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-       id="path4665"
-       cx="137.31876"
-       cy="118.1417"
-       r="1.8520833" />
-    <circle
-       style="opacity:1;vector-effect:none;fill:#3d9154;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-       id="path4665-6"
-       cx="137.31876"
-       cy="122.37504"
-       r="1.8520833" />
-    <circle
-       style="opacity:1;vector-effect:none;fill:#3d9154;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke fill markers"
-       id="path4665-1"
-       cx="137.31876"
-       cy="126.60837"
-       r="1.8520833" />
+         id="tspan4576-7"
+         x="44.057911"
+         y="105.98076"
+         style="font-size:5.64444447px;stroke-width:0.26458332px">Cmake, Python, Root, Geant-4</tspan></text>
   </g>
 </svg>

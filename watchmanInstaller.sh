@@ -2,15 +2,13 @@
 
 # Since system dependencies, especially on clusters, are a pain
 # Lets just pre-install everything (except GCC for now).
-# Assume one modules loads a good version of gcc
 
 # Todo:
 # --help, -h
-# interactive mode
-# Minimum gcc
 
-# CLEANSE! -- maybe not
-#[ "$(env | /bin/sed -r -e '/^(PWD|SHLVL|_)=/d')" ] && exec -c $0
+# wmInstall.log
+exec > >(tee -i wminstall.log)
+exec 2>&1
 
 function install(){
   help $@
@@ -122,12 +120,21 @@ function install(){
   # Install cmake
   if ! [ "$skip_cmake" = true ]
   then
-    git clone https://github.com/Kitware/CMake.git cmake_src
+    git clone https://github.com/Kitware/CMake.git --single-branch --branch v3.16.0 cmake_src
     mkdir -p cmake_build
-    #mkdir -p cmake
     cd cmake_build
-    ../cmake_src/bootstrap --prefix=../local && make -j$procuse && make install
+    ../cmake_src/bootstrap --prefix=../local \
+      && make -j$procuse \
+      && make install
     cd ../
+    # Check if cmake was successful, if so clean-up, otherwise exit
+    if test -f $prefix/bin/cmake
+    then
+      printf "Cmake install successful\n"
+    else
+      printf "Cmake install failed ... check logs\n"
+      exit 1
+    fi
     rm -rf cmake_src cmake_build
   fi
   
@@ -136,10 +143,18 @@ function install(){
   then
     git clone https://github.com/python/cpython.git --single-branch --branch 3.7 python_src
     cd python_src
-    ./configure --prefix=$prefix --enable-shared
-    make -j$procuse
-    make install
+    ./configure --prefix=$prefix --enable-shared \
+      && make -j$procuse \
+      && make install
     cd ../
+    # Check if python was successful, if so clean-up, otherwise exit
+    if test -f $prefix/bin/python3
+    then
+      printf "Python install successful\n"
+    else
+      printf "Python install failed ... check logs\n"
+      exit 1
+    fi
     rm -rf python_src
     python3 -m pip install --upgrade pip
     python3 -m pip install numpy scipy matplotlib PyOpenGL \
@@ -152,10 +167,20 @@ function install(){
     git clone https://github.com/root-project/root.git --single-branch --branch v6-18-00 root_src
     mkdir -p root_build
     cd root_build
-    cmake -D minuit2=ON -DCMAKE_INSTALL_PREFIX=$prefix -DPYTHON_EXECUTABLE=$(command -v python3) ../root_src
-    make -j$procuse
-    make install
+    cmake -D minuit2=ON -DCMAKE_INSTALL_PREFIX=$prefix \
+        -DPYTHON_EXECUTABLE=$(command -v python3) \
+        ../root_src \
+      && make -j$procuse \
+      && make install
     cd ../
+    # Check if root was successful, if so clean-up, otherwise exit
+    if test -f $prefix/bin/root
+    then
+      printf "Root install successful\n"
+    else
+      printf "Root install failed ... check logs\n"
+      exit 1
+    fi
     rm -rf root_src root_build
   fi
   
@@ -165,29 +190,46 @@ function install(){
     git clone https://github.com/geant4/geant4.git --single-branch --branch geant4-10.4-release geant_src
     mkdir -p geant_build
     cd geant_build
-    cmake -DCMAKE_INSTALL_PREFIX=$prefix ../geant_src -DGEANT4_BUILD_EXPAT=OFF -DGEANT4_BUILD_MULTITHREADED=OFF -DGEANT4_USE_QT=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_INSTALL_DATA_TIMEOUT=15000
-    make -j$procuse
-    make install
+    cmake -DCMAKE_INSTALL_PREFIX=$prefix ../geant_src -DGEANT4_BUILD_EXPAT=OFF -DGEANT4_BUILD_MULTITHREADED=OFF -DGEANT4_USE_QT=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_INSTALL_DATA_TIMEOUT=15000 \
+      && make -j$procuse \
+      && make install \
     cd ../
+    # Check if g4 was successful, if so clean-up, otherwise exit
+    if test -f $prefix/bin/geant4-config
+    then
+      printf "G4 install successful\n"
+    else
+      printf "G4 install failed ... check logs\n"
+      exit 1
+    fi
     rm -rf geant_src geant_build
   fi
   
   # Install rat-pac
-  #if [ $(root-config --version) ]
   if ! [ "$skip_ratpac" = true ]
   then
     source $prefix/bin/thisroot.sh
     source $prefix/bin/geant4.sh
+    rm -rf ratpac
     git clone https://github.com/ait-watchman/rat-pac.git ratpac
     cd ratpac
-    cmake . -Bbuild
-    cmake --build build -- -j$procuse
-    source ratpac.sh
+    cmake . -Bbuild \
+      && cmake --build build -- -j$procuse \
+      && source ./ratpac.sh \
+    # Check if ratpac was successful, if so clean-up, otherwise exit
+    if test -f build/bin/rat
+    then
+      printf "Ratpac install successful\n"
+    else
+      printf "Ratpac install failed ... check logs\n"
+      exit 1
+    fi
     cd ../
   fi
 
   if ! [ "$skip_sibyl" = true ]
   then
+    source $prefix/../ratpac/ratpac.sh
     python3 -m pip install git+https://github.com/ait-watchman/sibyl#egg=sibyl
   fi
   
@@ -223,4 +265,83 @@ function getnproc()
   echo $nproc
 }
 
-install $@
+function command_exists()
+{
+  if (command -v $1 > /dev/null )
+  then
+    true
+  else
+    false
+  fi
+}
+
+function check_deps()
+{
+  bool=true
+  # Before trying to install anything, confirm a list of dependencies
+  echo "Checking list of dependencies ..."
+  cmds=(gcc gfortran openssl curl)
+  for c in ${cmds[@]}
+  do
+    if command_exists $c
+    then
+      printf "%-30s%-20s\n" $c "Installed"
+    else
+      printf "%-30s%-20s\n" $c "NOT AVAILABLE"
+      bool=false
+    fi
+  done
+  # Check libraries with ldd
+  echo "Checking for libraries ..."
+  libraries=(libX11 libXpm libXft libffi libXext libQt libOpenGL)
+  for lb in ${libraries[@]}
+  do
+    if check_lib $lb
+    then
+      printf "%-30s%-20s\n" $lb "Installed"
+    else
+      printf "%-30s%-20s\n" $lb "NOT AVAILABLE"
+      bool=false
+    fi
+  done
+  echo "Dependencies look to be in check"
+
+  $bool
+}
+
+function check_lib()
+{
+  if (ldconfig -p | grep -q $1)
+  then
+    true
+  else
+    false
+  fi
+}
+
+function skip_check()
+{
+  bool=false
+  for elem in $@
+  do
+    if [[ $elem = "--skip-checks" ]];
+    then
+      printf "Skipping dependency checker\n"
+      bool=true
+    fi
+  done
+  $bool
+}
+
+if skip_check $@
+then
+  install $@
+else
+  if check_deps
+  then
+    install $@
+  else
+    printf "\033[31mPlease install system dependencies as indicated above.\033[0m\n"
+    printf "\033[31mYou can skip these checks by passing the --skip-checks flag.\033[0m\n"
+  fi
+fi
