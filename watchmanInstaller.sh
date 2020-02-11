@@ -192,7 +192,7 @@ function install(){
     cd geant_build
     cmake -DCMAKE_INSTALL_PREFIX=$prefix ../geant_src -DGEANT4_BUILD_EXPAT=OFF -DGEANT4_BUILD_MULTITHREADED=OFF -DGEANT4_USE_QT=ON -DGEANT4_INSTALL_DATA=ON -DGEANT4_INSTALL_DATA_TIMEOUT=15000 \
       && make -j$procuse \
-      && make install \
+      && make install
     cd ../
     # Check if g4 was successful, if so clean-up, otherwise exit
     if test -f $prefix/bin/geant4-config
