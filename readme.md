@@ -1,6 +1,5 @@
 Watchman Utilities
 ==================
-This change should not go through.
 ![wmutils](wmutils.svg)
 
 This repository is an organized dumping ground for watchman related code which

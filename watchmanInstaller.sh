@@ -157,7 +157,7 @@ function install(){
     fi
     rm -rf python_src
     python3 -m pip install --upgrade pip
-    python3 -m pip install numpy 
+    python3 -m pip install numpy docopt
   fi
   
   # Install root
