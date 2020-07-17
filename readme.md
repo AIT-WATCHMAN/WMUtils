@@ -1,6 +1,7 @@
 Watchman Utilities
 ==================
-![wmutils](wmutils.svg)
+**Maintainer:** [@MorganAskins](https://github.com/MorganAskins)
+<div align="center"><img src="wmutils.svg" width=50% /></div>
 
 This repository is an organized dumping ground for watchman related code which
 should include useful tools (such as watchmakers and sibyl), related analysis
