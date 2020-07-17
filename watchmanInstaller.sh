@@ -112,7 +112,7 @@ function install(){
     fi
   done
   
-  prefix=$(pwd)/local
+  prefix=$(pwd -P)/local
   mkdir -p $prefix/bin
   export PATH=$prefix/bin:$PATH
   export LD_LIBRARY_PATH=$prefix/lib:$LD_LIBRARY_PATH
