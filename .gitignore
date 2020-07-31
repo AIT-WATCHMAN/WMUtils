@@ -4,3 +4,6 @@ ratpac/*
 *log
 *ipynb_checkpoints*
 wminstall.log
+ratpac/*
+rat-pac/*
+*.root
