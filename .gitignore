@@ -3,6 +3,12 @@ local/*
 *log
 *ipynb_checkpoints*
 wminstall.log
+*.root
+
+# wmutils is commonly used to pull in other
+# Git repositories, we will ignore those
 ratpac*
 rat-pac*
-*.root
+bonsai*
+watchmakers*
+sibyl*
