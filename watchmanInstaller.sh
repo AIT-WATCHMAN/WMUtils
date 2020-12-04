@@ -212,9 +212,7 @@ function install(){
     rm -rf ratpac
     git clone https://github.com/ait-watchman/rat-pac.git ratpac
     cd ratpac
-    cmake . -Bbuild \
-      && cmake --build build -- -j$procuse \
-      && source ./ratpac.sh \
+    make -j$procuse && source ./ratpac.sh
     # Check if ratpac was successful, if so clean-up, otherwise exit
     if test -f build/bin/rat
     then
