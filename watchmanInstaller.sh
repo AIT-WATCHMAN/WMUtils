@@ -167,7 +167,7 @@ function install(){
     mkdir -p root_build
     cd root_build
     cmake -D minuit2=ON -DCMAKE_INSTALL_PREFIX=$prefix \
-        -DPYTHON_EXECUTABLE=$(command -v python3) \
+        -DPYTHON_EXECUTABLE=$(command -v python3) -Ddavix=OFF \
         ../root_src \
       && make -j$procuse \
       && make install
